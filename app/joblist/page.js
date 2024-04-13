@@ -25,11 +25,11 @@ const handleChange = (event) =>{
         <Navbarr />
        
             <div className='grid grid-cols-1 m-10 md:grid-cols-2 '>
-        <div className='border-2 bg-white p-3 rounded-lg flex items-center px-6 py-4 md:px-0 md:py-0  ' >
-          <CiSearch className='basis-1/4 md:-ml-4 '/>
-          <input className='text-xs basis-3/4 font-light focus:outline-none  inline md:mr-2' placeholder='Search jobs,skills' type='search'  onChange={handleChange}></input></div>
+        <div className='border-2 bg-white p-3 rounded-lg flex items-center  px-6 py-4 sm:mx-16 md:mr-0  md:px-0 md:py-0 ' >
+          <CiSearch className='basis-1/4  '/>
+          <input className='text-xs basis-3/4 font-light focus:outline-none  inline ' placeholder='Search jobs,skills' type='search'  onChange={handleChange}></input></div>
        
-        <button className='border-2 p-3 text-white bg-[#56BC80] m-6 rounded-lg text-sm'>Find Jobs</button>
+        <button className='border-2 p-3 text-white bg-[#56BC80] m-6 rounded-lg text-sm sm:mx-24 md:mx-16 '>Find Jobs</button>
         </div>
         <div className='sm:grid sm:grid-cols-2 md:grid-cols-3'>
     { jobs && jobs.filter((job)=>{
