@@ -14,7 +14,7 @@ const page = () => {
     const data = await res.json();
     setJobs(data.jobs); 
   }  fetchJobs();
-}, []);    
+}, [jobs]);    
   
 const handleChange = (event) =>{
     setSearch(event.target.value)
