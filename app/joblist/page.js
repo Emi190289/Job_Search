@@ -119,7 +119,7 @@ const Page = () => {
               </select>
             </div>
           </div>
-          <div className='grid grid-cols-1 gap-5 md:grid md:grid-cols-3 md:gap-5'>
+          <div className='grid grid-cols-1 gap-5 px-4 md:px-0 md:grid md:grid-cols-3 md:gap-5'>
             {!loadingData && !jobsError && jobs && jobs.length > 0 && jobs.map(job => (
 
               <ul key={job.id} className='rounded-xl shadow-xl bg-white text-black py-5 px-10  '>
