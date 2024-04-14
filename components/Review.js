@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Review = () => {
   return (
     <div className='max-w-screen-lg mx-auto'>
-      <p className='text-center text-lg font-semibold mt-10 '>What Our Customer Say</p>
+      <p className='text-center text-lg font-semibold mt-10'>What Our Customer Say</p>
       <div className='grid grid-cols-1 justify-items-center mt-10  md:grid-cols-2 md:px-20  '>
         <Image src={'/testimonial.png'} width={250} height={120} className='p-6' alt="msg" />
         <div className='mt-4 p-6 md:mt-0'>

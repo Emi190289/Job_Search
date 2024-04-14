@@ -10,13 +10,13 @@ import Register from "@/components/Register";
 const Homepage = () => {
   return (
     <div>
-         <Navbarr />
-   <About />
-   <Feature />
-   <Latest />
-   <Review />
-   <Register />
-   <Footer />
+      <Navbarr />
+      <About />
+      <Feature />
+      <Latest />
+      <Review />
+      <Register />
+      <Footer />
     </div>
   )
 }

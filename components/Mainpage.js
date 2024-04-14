@@ -1,19 +1,19 @@
 "use client"
 import React from 'react'
-import {Routes, Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 
 function Mainpage() {
 
-  return (
-    <div>
-        {/* <Homepage /> */}
-     {/* <Routes>
+   return (
+      <div>
+         {/* <Homepage /> */}
+         {/* <Routes>
         <Route path='/' element={<Joblisting />}></Route>
         {/* <Route path='/jobs' element={ <Joblisting />}></Route> */}
-     {/* </Routes>  */}
-     </div>
-  )
+         {/* </Routes>  */}
+      </div>
+   )
 }
 
 export default Mainpage
