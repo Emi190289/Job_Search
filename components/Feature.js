@@ -6,9 +6,9 @@ import 'animate.css'
 
 const Feature = () => {
   return (
-    <div className='max-w-screen-xl mx-auto my-20'>
+    <div className='max-w-screen-xl mx-auto my-6 sm:my-10'>
       <p className='text-center p-6 text-md'>Featured recruiter and employers</p>
-      <div className='grid grid-cols-1 justify-items-center md:grid-cols-2  lg:grid-cols-4'>
+      <div className='grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-4'>
         <div className='my-4 animate__animated animate__fadeInDown '> <Image src='/google.png' width={100} height={50} alt="Google" /></div>
         <div className='my-4 animate__animated animate__fadeInDown animate__delay-1s' >   <Image src='/amazon.png' width={100} height={50} alt="amazon" /></div>
         <div className='my-4 animate__animated animate__fadeInDown animate__delay-2s'>   <Image src='/slack.png' width={130} height={50} alt="slack" /></div>

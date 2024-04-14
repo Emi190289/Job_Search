@@ -24,9 +24,9 @@ const Latest = () => {
   return (
     <div className='bg-[#56BC80] text-white py-10'>
       <div className='max-w-screen-xl mx-auto'>
-        <div className='md:grid md:grid-cols-2 py-6'>
-          <div className='text-left text-4xl font-bold'>Latest Jobs Here</div>
-          <a className='text-right text-lg' href='/joblist'>View All Jobs</a>
+        <div className='grid grid-cols-1 sm:grid-cols-2 sm:px-4 py-6'>
+          <div className='text-center text-2xl sm:text-left  md:text-3xl font-bold'>Latest Jobs Here</div>
+          <a className='text-center text-lg mt-2 sm:text-right' href='/joblist'>View All Jobs</a>
         </div>
         <div className='md:grid md:grid-cols-3 gap-5'>
           {jobs && jobs.map(job => (

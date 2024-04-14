@@ -70,37 +70,37 @@ const Page = () => {
   }
 
   return (
-    <div>
+    <div >
       <Navbarr />
-      <div className='bg-[#56BC80] py-[60px] '>
+      <div className='bg-[#56BC80] py-[30px]  lg:py-[60px] lg:pb-6'>
         <div className='max-w-screen-xl mx-auto'>
           <form onSubmit={onSubmit}>
-            <div className='text-white text-4xl me-10'>
+            <div className='text-white text-2xl pl-4 lg:text-4xl me-10 lg:pl-0 xl:pl-4'>
               Search Jobs
             </div>
-            <div className='flex gap-5 items-center'>
-              <div className=' bg-white p-3 rounded-lg flex gap-5 items-center px-10 py-4 h-[100px] ' >
-                <div className='flex flex-col'>
+            <div className='mt-4 px-4   lg:px-0 lg:flex lg:gap-5 lg:items-center  lg:mt-2'>
+              <div className='bg-white p-3 rounded-lg lg:bg-white lg:p-3 lg:rounded-none xl:rounded-lg lg:flex lg:gap-5 lg:items-center lg:px-10 lg:py-4 lg:h-[100px] ' >
+                <div className='flex flex-col '>
                   <label className='text-xs font-bold'>Keywords</label>
-                  <input onChange={handleChange} className='text-xs font-light focus:outline-none  inline md:mr-2 h-[40px] w-80' placeholder='Search jobs,skills' name='keyword' type='text' />
+                  <input onChange={handleChange} className='text-xs font-light focus:outline-none  inline  lg:mr-2 w-40 h-[40px] lg:w-80' placeholder='Search jobs,skills' name='keyword' type='text' />
                 </div>
-                <div className='flex flex-col'>
-                  <label className='text-xs font-bold'>Category</label>
-                  <select className='text-sm border rounded-xl h-[40px] w-80 px-2' name='category' onChange={handleChange} value={formData.category}>
+                <div className='flex items-center lg:flex lg:flex-col lg:items-start lg:mt-0 mt-14 lg:-ml-40 xl:ml-0'>
+                  <label className='text-xs font-bold '>Category</label>
+                  <select className='text-sm border rounded-xl h-[40px] w-80 px-2 ml-2 lg:ml-0' name='category' onChange={handleChange} value={formData.category}>
                     <option value={'marketing'}>Marketing</option>
                     <option value={'data-science'}>Data Science</option>
                   </select>
                 </div>
-                <div className='flex flex-col'>
+                <div className='flex items-center lg:flex-col lg:items-start mt-6 lg:mt-0 lg:-ml-4 xl:ml-0'>
                   <label className='text-xs font-bold'>Location</label>
-                  <select className='text-sm border rounded-xl h-[40px] w-80 px-2' name='geo' onChange={handleChange} value={formData.geo}>
+                  <select className='text-sm border rounded-xl h-[40px] w-80 px-2 ml-4 lg:mt-0' name='geo' onChange={handleChange} value={formData.geo}>
                     <option value={'usa'}>USA</option>
                     <option value={'uk'}>United Kingdom</option>
                   </select>
                 </div>
-                <div className='flex flex-col'>
+                <div className='flex flex-col mt-4 lg:mt-0'>
                   <label className='text-xs font-bold'>&nbsp;</label>
-                  <button className='border-2 px-4 py-2 text-white bg-[#56BC80] ml-4 rounded-lg text-sm' type='submit'>Find Jobs</button>
+                  <button className='border-2 px-4 py-2 ml-0 sm:mx-16 sm:mr-48 md:mr-80 lg:mr-0 text-white bg-[#56BC80] ml-4 lg:ml-0 xl:mx-2  rounded-lg text-sm ' type='submit'>Find Jobs</button>
                 </div>
               </div>
             </div>
@@ -110,10 +110,10 @@ const Page = () => {
       <div className='bg-[#f1f1f1] py-[60px] pt-10'>
         <div className='max-w-screen-xl mx-auto'>
           <div className='grid grid-cols-2'>
-            <p className='text-2xl font-semibold mb-10'>Jobs List</p>
+            <p className='text-2xl font-semibold mb-10 pl-4'>Jobs List</p>
             <div className='flex flex-col items-end'>
-              <label className='text-xs font-semibold'>Sort By</label>
-              <select className='text-sm border rounded-xl h-[30px] px-2' onChange={sortByDate}>
+              <label className='text-xs font-semibold pr-4'>Sort By</label>
+              <select className='text-sm border rounded-xl h-[30px] px-2 mr-4 mt-2' onChange={sortByDate}>
                 <option value={true}>Latest First</option>
                 <option value={false}>Oldest First</option>
               </select>
