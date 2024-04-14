@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# JOB PORTAL APP
+
+This project involved us to allow the candidate to find a Job that is suitable according to their experiences and qualification. And also allow the candidate to find a suitable job according to their location and Domain by using NextJS and deployed at vercel
+
 ## Getting Started
 
 First, run the development server:
