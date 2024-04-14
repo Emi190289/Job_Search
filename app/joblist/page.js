@@ -145,24 +145,24 @@ const Page = () => {
             ))}
             {jobsError && <p>Failed to load jobs</p>}
             {loadingData &&
-              <div class="border bg-gray-100 shadow-xl rounded-md p-16 w-full mx-auto">
-                <div class="animate-pulse flex space-x-4">
-                  <div class="flex-1 space-y-6 py-1">
-                    <div class="space-y-3">
-                      <div class="grid grid-cols-2 gap-4">
-                        <div class="h-4 bg-gray-300 rounded"></div>
+              <div className="border bg-gray-100 shadow-xl rounded-md p-16 w-full mx-auto">
+                <div className="animate-pulse flex space-x-4">
+                  <div className="flex-1 space-y-6 py-1">
+                    <div className="space-y-3">
+                      <div className="grid grid-cols-2 gap-4">
+                        <div className="h-4 bg-gray-300 rounded"></div>
                       </div>
                     </div>
-                    <div class="space-y-3">
-                      <div class="grid grid-cols-3 gap-4">
-                        <div class="h-2 bg-gray-300 rounded col-span-1"></div>
-                        <div class="h-2 bg-gray-300 rounded col-span-2"></div>
+                    <div className="space-y-3">
+                      <div className="grid grid-cols-3 gap-4">
+                        <div className="h-2 bg-gray-300 rounded col-span-1"></div>
+                        <div className="h-2 bg-gray-300 rounded col-span-2"></div>
                       </div>
                     </div>
-                    <div class="space-y-3">
-                      <div class="grid grid-cols-3 gap-4">
-                        <div class="h-2 bg-gray-300 rounded col-span-2"></div>
-                        <div class="h-2 bg-gray-300 rounded col-span-1"></div>
+                    <div className="space-y-3">
+                      <div className="grid grid-cols-3 gap-4">
+                        <div className="h-2 bg-gray-300 rounded col-span-2"></div>
+                        <div className="h-2 bg-gray-300 rounded col-span-1"></div>
                       </div>
                     </div>
                   </div>
@@ -170,7 +170,7 @@ const Page = () => {
               </div>
             }
             {jobsCount === 0 && !loadingData && 
-              <div class="bg-gray-100 rounded-md p-16 w-full mx-auto">
+              <div className="bg-gray-100 rounded-md p-16 w-full mx-auto">
                 <p className='text-center'>No jobs found</p>
               </div>
             }
