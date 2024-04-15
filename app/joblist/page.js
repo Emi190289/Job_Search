@@ -79,7 +79,7 @@ const Page = () => {
               Search Jobs
             </div>
             <div className='mt-4 px-4   lg:px-0 lg:flex lg:gap-5 lg:items-center  lg:mt-2'>
-              <div className='bg-white p-3 rounded-lg lg:bg-white lg:p-3 lg:rounded-none xl:rounded-lg lg:flex lg:gap-5 lg:items-center lg:px-10 lg:py-4 lg:h-[100px] ' >
+              <div className=' bg-white  p-3 rounded-lg lg:bg-white lg:p-3 lg:rounded-none xl:rounded-lg lg:flex lg:gap-5 lg:items-center lg:px-10 lg:py-4 lg:h-[100px] ' >
                 <div className='flex flex-col '>
                   <label className='text-xs font-bold'>Keywords</label>
                   <input onChange={handleChange} className='text-xs font-light focus:outline-none  inline  lg:mr-2 w-40 h-[40px] lg:w-80' placeholder='Search jobs,skills' name='keyword' type='text' />

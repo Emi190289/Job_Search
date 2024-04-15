@@ -28,7 +28,7 @@ const Latest = () => {
           <div className='text-center text-2xl sm:text-left  md:text-3xl font-bold'>Latest Jobs Here</div>
           <a className='text-center text-lg mt-2 sm:text-right' href='/joblist'>View All Jobs</a>
         </div>
-        <div className='md:grid md:grid-cols-3 gap-5'>
+        <div className='grid grid-cols-1 my-4 mx-4  gap-y-4 md:grid-cols-3 gap-5'>
           {jobs && jobs.map(job => (
 
             <ul key={job.id} className='rounded-xl shadow-xl bg-white text-black py-5 px-10  '>
